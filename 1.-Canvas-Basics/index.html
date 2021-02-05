@@ -4,8 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Canvas</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+
+        }
+    </style>
 </head>
 <body>
-    
+
+
+    <canvas id="canvas1" height="1000" width="1000"></canvas>
+
+    <script>
+        console.log("Hello");
+        const canvas = document.getElementById("canvas1");
+        const ctx = canvas.getContex("2d");
+        ctx.fillStyle = "red";
+        ctx.fillRect(0,0, 1000, 1000);
+    </script>
 </body>
 </html>
